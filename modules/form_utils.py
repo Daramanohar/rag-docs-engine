@@ -7,7 +7,6 @@ from datetime import datetime
 from io import StringIO
 import pandas as pd
 import re
-import openai
 
 class FormUtils:
     """Utility functions for form processing and data management"""
