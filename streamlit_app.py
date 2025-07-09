@@ -437,14 +437,7 @@ def chunk_text(text, chunk_size=300):
     return chunks
 
 # --- EMBEDDING ---
-def get_embedding(text):
-    try:
-        response = openai.embeddings.create(input=text, model="text-embedding-ada-002")
-        return response['data'][0]['embedding']
-    except Exception as e:
-        logging.error(f"Embedding generation failed: {e}")
-        st.error("Failed to generate embedding for text. Please check your OpenAI API key and usage limits.")
-        return None
+# Remove any openai embedding code, as sentence-transformers is used instead.
 
 # --- POSTPROCESSING ---
 def postprocess(text):
