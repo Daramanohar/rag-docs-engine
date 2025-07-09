@@ -5,12 +5,7 @@ import psycopg2
 import logging
 
 # Initialize models
-try:
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
-    import spacy.cli
-    spacy.cli.download("en_core_web_sm")
-    nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Database configuration
