@@ -1,0 +1,230 @@
+2025-07-07 11:57:04,022 INFO:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 11:57:04,873 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 11:57:04,939 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 11:57:04,940 ERROR:Processing failed: name 'store_processed_doc_in_rag' is not defined
+2025-07-07 11:59:15,413 INFO:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 11:59:15,559 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 11:59:15,604 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 11:59:15,609 ERROR:Processing failed: name 'chunk_text' is not defined
+2025-07-07 12:07:32,904 INFO:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 12:07:33,054 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:07:33,128 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:07:33,130 ERROR:Processing failed: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-07-07 12:15:04,410 INFO:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 12:15:04,545 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:15:04,592 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:15:10,077 INFO:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:15:10,078 ERROR:Processing failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-.... You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-07-07 12:42:00,362 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:42:14,344 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:42:43,289 INFO:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 12:42:43,445 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:42:43,497 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:42:44,106 INFO:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:42:44,108 ERROR:Processing failed: Error code: 401 - {'error': {'message': "No such project: 'proj_...'", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_project'}}
+2025-07-07 12:42:45,466 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:49:05,327 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:49:10,985 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:49:36,257 INFO:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 12:49:36,414 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:49:36,479 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:49:36,906 INFO:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+2025-07-07 12:49:36,910 ERROR:Processing failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************7aoA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-07-07 12:49:38,104 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 401 Unauthorized"
+2025-07-07 17:20:14,754 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 401 Unauthorized"
+2025-07-08 12:35:17,787 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 12:35:19,602 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 12:35:19,870 ERROR:Processing failed: name 'insert_chunk' is not defined
+2025-07-08 13:01:10,073 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:01:11,915 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:01:12,098 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:06:46,148 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:06:48,203 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:06:48,417 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:07:46,232 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:07:47,773 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-07-08 13:36:28,219 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:36:30,050 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:36:30,395 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:37:22,672 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:37:24,085 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:37:48,925 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:37:50,194 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:38:20,527 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:38:21,551 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:48:02,804 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:48:05,212 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:48:05,448 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:54:25,433 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:54:26,665 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:55:30,665 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:55:31,680 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 13:56:10,017 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 13:56:11,397 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 14:08:56,935 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 14:08:59,296 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 14:08:59,497 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 14:10:58,838 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 14:11:00,202 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 14:19:16,927 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 14:19:19,413 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 14:19:19,653 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 14:20:20,047 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 14:20:21,410 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 17:01:38,309 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 17:01:40,146 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 17:01:40,314 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 17:02:05,692 ERROR:Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-07-08 17:02:07,131 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 18:42:35,506 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 18:42:37,562 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 18:42:56,150 ERROR:Failed to fetch similar chunks: relation "documents" does not exist
+LINE 3:                     FROM documents
+                                 ^
+
+2025-07-08 18:42:56,818 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 18:51:58,472 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 18:52:00,515 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 18:53:34,387 ERROR:Failed to fetch similar chunks: relation "documents" does not exist
+LINE 3:                     FROM documents
+                                 ^
+
+2025-07-08 18:53:35,699 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 19:02:23,820 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 19:02:25,730 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 19:03:16,588 ERROR:Failed to fetch similar chunks: relation "documents" does not exist
+LINE 3:                     FROM documents
+                                 ^
+
+2025-07-08 19:03:17,600 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 20:23:52,752 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 20:23:54,636 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 20:24:29,952 ERROR:Failed to fetch similar chunks: relation "documents" does not exist
+LINE 3:                     FROM documents
+                                 ^
+
+2025-07-08 20:24:31,033 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 20:31:12,994 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 20:31:14,808 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 20:31:49,991 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 20:31:52,127 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 20:32:31,770 ERROR:Failed to fetch similar chunks: relation "documents" does not exist
+LINE 3:                     FROM documents
+                                 ^
+
+2025-07-08 20:32:32,865 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 20:53:43,902 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 20:53:45,734 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 21:02:26,286 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 21:02:28,175 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 21:03:25,344 ERROR:Failed to fetch similar chunks: relation "documents" does not exist
+LINE 3:                     FROM documents
+                                 ^
+
+2025-07-08 21:03:26,340 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 21:34:24,125 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 21:34:26,073 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 21:34:54,803 ERROR:Failed to fetch similar chunks: relation "documents" does not exist
+LINE 3:                     FROM documents
+                                 ^
+
+2025-07-08 21:34:55,666 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 11:16:36,982 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 11:16:39,065 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 11:16:50,335 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 11:16:52,084 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 11:17:43,233 ERROR:Failed to fetch similar chunks: relation "documents" does not exist
+LINE 3:                     FROM documents
+                                 ^
+
+2025-07-09 11:17:44,686 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 11:39:14,019 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 11:39:15,979 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 11:40:38,297 ERROR:Failed to fetch similar chunks: relation "documents" does not exist
+LINE 3:                     FROM documents
+                                 ^
+
+2025-07-09 11:40:39,930 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:06:31,540 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:06:33,328 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:07:18,509 ERROR:Failed to fetch similar chunks: operator does not exist: vector <-> numeric[]
+LINE 2:                     SELECT content, embedding <-> ARRAY[ -0....
+                                                      ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+2025-07-09 14:07:20,042 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:09:10,601 ERROR:Failed to fetch similar chunks: operator does not exist: vector <-> numeric[]
+LINE 2:                     SELECT content, embedding <-> ARRAY[ -0....
+                                                      ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+2025-07-09 14:09:11,913 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:30:50,289 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:30:52,569 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:31:50,025 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:32:21,754 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:32:54,831 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:37:14,164 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:37:40,492 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:42:09,681 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:45:26,139 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:46:02,830 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 14:48:02,996 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 15:11:12,626 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 15:11:12,679 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-09 15:11:12,680 INFO:Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2025-07-09 15:11:16,040 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 15:12:20,537 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-07-09 15:16:57,576 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 15:17:00,014 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 15:18:29,959 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-07-09 15:19:19,803 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-07-09 15:20:21,917 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-07-09 15:26:01,919 ERROR:Unsupported file type for processing: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+2025-07-09 15:26:33,250 ERROR:Unsupported file type for processing: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+2025-07-09 15:41:00,164 ERROR:Unsupported file type for processing: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+2025-07-09 15:42:21,850 INFO:Use pytorch device_name: cpu
+2025-07-09 15:42:21,850 INFO:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-09 15:42:29,867 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 15:42:31,934 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 15:44:20,358 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 15:45:51,805 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:00:45,427 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:00:47,609 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:01:29,612 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:14:30,666 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:14:32,802 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:15:15,942 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:16:36,448 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:16:38,381 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:17:15,066 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:17:17,111 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:17:41,801 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:17:43,541 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:18:12,557 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:18:37,384 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:25:42,955 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:25:44,977 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:26:58,586 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:27:00,522 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:27:55,429 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:29:01,762 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:29:53,591 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 16:30:32,319 INFO:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
