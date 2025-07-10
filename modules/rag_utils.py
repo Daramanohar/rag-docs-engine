@@ -3,6 +3,7 @@ import spacy
 import re
 import psycopg2
 import logging
+import streamlit as st
 
 # Initialize models
 nlp = spacy.load("en_core_web_sm")
@@ -10,11 +11,11 @@ embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Database configuration
 DB_CONFIG = {
-    "dbname": "formprocessing",
-    "user": "postgres",
-    "password": "5657",  # Make sure this matches your actual password
-    "host": "localhost",
-    "port": 5432
+    "host": st.secrets["DB_HOST"],
+    "port": st.secrets["DB_PORT"],
+    "dbname": st.secrets["DB_NAME"],
+    "user": st.secrets["DB_USER"],
+    "password": st.secrets["DB_PASSWORD"]
 }
 
 def get_db_conn():
