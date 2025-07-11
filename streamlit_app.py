@@ -293,13 +293,28 @@ with tab2:
                 answer = get_llama_rag_response(user_question, context_chunks)
                 cleaned_answer, entities = postprocess(answer)
                 st.chat_message("assistant").write(cleaned_answer)
-                st.write("Named Entities:")
+                st.write("Named Entities extracted from the provided text are listed below. For more detailed information or additional data, please refer to the database.")
+
                 st.subheader("Named Entities (JSON Format):")
                 st.json(entities)
 
-                st.subheader("Named Entities (Human-Readable):")
+                st.subheader("Named Entities (Human-Readable Table):")
+                import pandas as pd
+
+                df = pd.DataFrame(entities, columns=["Entity", "Type"])
+                st.table(df)
+
+                st.subheader("Named Entities (Human-Readable List with Descriptions):")
+                entity_type_descriptions = {
+                    "NORP": "Nationality, religious or political group",
+                    "ORG": "Organization",
+                    "CARDINAL": "Numerical value",
+                    "DATE": "Date or year",
+                    # Add more as needed
+                }
                 for entity, label in entities:
-                    st.write(f"• **{entity}** ({label})")
+                    description = entity_type_descriptions.get(label, "Other")
+                    st.write(f"• **{entity}** — *{label}* ({description})")
 
 with tab3:
     st.header("📈 Analytics Dashboard")
@@ -472,3 +487,8 @@ def store_processed_doc_in_rag(doc):
         else:
             logging.warning(f"Skipping chunk due to embedding failure: {chunk[:50]}")
 
+# --- In your document processing/upload logic, after processing each doc ---
+# Example (pseudo):
+# for doc in processed_docs:
+#     store_processed_doc_in_rag(doc)
+#     st.session_state.processed_data.append(doc)
