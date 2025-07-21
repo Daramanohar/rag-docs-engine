@@ -11,69 +11,60 @@ class DataAnalyzer:
         self.client = Groq(api_key=api_key)
     
     def extract_key_values(self, text: str) -> str:
-        """
-        Extract key-value pairs from text using a robust regex that handles multi-line values.
-        """
+        """Extract key-value pairs from text and check completeness."""
         try:
+            key_variables = []
             extracted_data = {}
 
-            # This regex is designed to be robust and handle multi-line values.
-            # Explanation:
-            # ^(?P<key>[A-Za-z0-9\s()\/_-]+?) : Start of a line, capture a non-greedy key containing letters, numbers, spaces, and common symbols.
-            # \s*[:|-]\s*                    : Match a separator (colon or pipe) surrounded by optional whitespace.
-            # (?P<value>[\s\S]+?)           : Capture a non-greedy value. `[\s\S]` matches ANY character, including newlines.
-            # (?=\n^[A-Za-z0-9\s()\/_-]+?\s*[:|-]|\Z) : Positive lookahead. The value ends when we see either:
-            #                                       - A newline followed by the start of another key (`\n^...`)
-            #                                       - OR the absolute end of the string (`\Z`)
-            
-            # Note: This is a significant improvement over line-by-line parsing.
-            pattern = re.compile(
-                r"^(?P<key>[A-Za-z0-9\s()\/_-]+?)\s*[:|-]\s*(?P<value>[\s\S]+?)(?=\n^[A-Za-z0-9\s()\/_-]+?\s*[:|-]|\Z)",
-                re.MULTILINE
-            )
-            
-            for match in pattern.finditer(text):
-                # Clean up the extracted key and value
-                key = match.group('key').strip()
-                # The value might have multiple lines, so we just strip leading/trailing whitespace
-                value = match.group('value').strip()
-                
-                if key and key not in extracted_data:
-                    extracted_data[key] = value
+            lines = text.splitlines()
 
-            # --- Report Generation (Unchanged from original but now uses better data) ---
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue
 
-            # Check for missing fields based on extracted keys
+                # Look for key-value patterns
+                match = re.match(r"^-?\s*(.+?)\s*[:|]\s*(.+)", line)
+                if match:
+                    key = match.group(1).strip()
+                    value = match.group(2).strip()
+                    if key not in extracted_data:
+                        key_variables.append(key)
+                        extracted_data[key] = value
+                else:
+                    # Handle pipe-separated values
+                    parts = re.split(r"\s*\|\s*", line)
+                    for part in parts:
+                        match_nested = re.match(r"(.+?)\s*[:|]\s*(.+)", part)
+                        if match_nested:
+                            key = match_nested.group(1).strip()
+                            value = match_nested.group(2).strip()
+                            if key not in extracted_data:
+                                key_variables.append(key)
+                                extracted_data[key] = value
+
+            # Check for missing fields
             missing_fields = [key for key, value in extracted_data.items() if not value or value.strip() == ""]
 
             # Build report
             report = "Extracted Key-Value Pairs:\n"
             report += "=" * 30 + "\n"
             
-            if not extracted_data:
-                report += "No key-value pairs could be extracted with the defined pattern.\n"
-                report += "Please check if the document follows a 'key: value' or 'key | value' format."
-            else:
-                for k, v in extracted_data.items():
-                    status = "✅" if v and v.strip() else "❌"
-                    # For display, replace newlines in value with a space to keep the report clean
-                    display_value = re.sub(r'\s+', ' ', v) if v else ""
-                    report += f"{status} {k}: {display_value}\n"
+            for k, v in extracted_data.items():
+                status = "✅" if v and v.strip() else "❌"
+                report += f"{status} {k}: {v}\n"
 
             report += "\n" + "=" * 30 + "\n"
             
-            if extracted_data:
-                if missing_fields:
-                    completeness = ((len(extracted_data) - len(missing_fields)) / len(extracted_data) * 100)
-                    report += f"⚠️ Missing/Empty Fields ({len(missing_fields)}): {', '.join(missing_fields)}\n"
-                    report += f"📊 Completeness: {completeness:.1f}%"
-                else:
-                    report += "🎉 Form appears complete (100%)"
+            if missing_fields:
+                report += f"⚠️ Missing/Empty Fields ({len(missing_fields)}): {', '.join(missing_fields)}\n"
+                report += f"📊 Completeness: {((len(extracted_data) - len(missing_fields)) / len(extracted_data) * 100):.1f}%"
+            else:
+                report += "🎉 Form appears complete (100%)"
 
             return report
             
         except Exception as e:
-            st.error(f"An unexpected error occurred during key-value extraction: {str(e)}")
             return f"Error extracting key-values: {str(e)}"
     
     def summarize_text(self, text: str, form_type: str = "general") -> str:
@@ -101,11 +92,12 @@ class DataAnalyzer:
                 
                 "general": "You are an AI assistant that summarizes document content concisely and clearly."
             }
+
             
             system_prompt = system_prompts.get(form_type, system_prompts["general"])
             
             response = self.client.chat.completions.create(
-                model="llama-3.1-70b-versatile", # Note: I've updated to a generally available high-performance model
+                model="llama3-70b-8192",
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": f"Please provide a comprehensive summary of this {form_type} document:\n\n{text}"}
@@ -137,7 +129,7 @@ class DataAnalyzer:
             """
 
             response = self.client.chat.completions.create(
-                model="llama-3.1-70b-versatile",
+                model="llama3-70b-8192",
                 messages=[
                     {"role": "system", "content": "You are an AI assistant helping product managers analyze documents for team and client communication."},
                     {"role": "user", "content": prompt}
